@@ -55,8 +55,6 @@ CORE_SAMPLES = \
 	
 ifeq "$(GLUT_SUPPORTED)" "1"
 	CORE_SAMPLES += \
-		Samples/NiViewer \
-		Samples/NiSimpleViewer \
 		Samples/NiUserTracker \
 		Samples/NiUserSelection \
 		Samples/NiHandTracker

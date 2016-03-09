@@ -254,8 +254,8 @@ os.chdir("../../../Source/DoxyGen");
 if os.path.exists("html"):
     os.system("rm -rf html")
 # Running doxygen
-os.makedirs("html")
-execute_check("doxygen Doxyfile > "+ SCRIPT_DIR + "/Output/EngineDoxy.txt", "Creating Documentation")
+#os.makedirs("html")
+#execute_check("doxygen Doxyfile > "+ SCRIPT_DIR + "/Output/EngineDoxy.txt", "Creating Documentation")
 
 # remove unneeded files
 os.system("rm -rf html/*.map html/*.md5 html/*.hhc html/*.hhk html/*.hhp")
@@ -325,7 +325,7 @@ shutil.copy("Bin/" + PLATFORM + "-Release/org.openni.jar", REDIST_DIR + "/Sample
 shutil.copy("Bin/" + PLATFORM + "-Release/org.openni.jar", REDIST_DIR + "/Samples/Bin/" + PLATFORM + "-Release")
 
 #docs
-shutil.copytree("../../Source/DoxyGen/html", REDIST_DIR + "/Documentation/html")
+#shutil.copytree("../../Source/DoxyGen/html", REDIST_DIR + "/Documentation/html")
 
 #include
 for includeFile in os.listdir("../../Include"):
